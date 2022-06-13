@@ -1,0 +1,10 @@
+@mixin Dpflex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+@mixin Dpflexrow($gap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $gap;
+}

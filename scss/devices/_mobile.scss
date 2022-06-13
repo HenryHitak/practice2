@@ -1,0 +1,157 @@
+@media (min-width: 300px) {
+  header {
+    height: 60vh;
+    width: 100%;
+    background-image: url("/img/bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    nav {
+      display: none;
+    }
+  }
+  footer {
+    display: none;
+  }
+  .background {
+    .container {
+      padding-bottom: 5%;
+    }
+    display: flex;
+    align-items: flex-end;
+    height: 60vh;
+    position: relative;
+    h1 {
+      color: $defaultColor3;
+    }
+    p {
+      color: white;
+    }
+  }
+  #tables {
+    display: none;
+  }
+  #typography {
+    .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    blockquote {
+      padding-left: 20%;
+      display: flex;
+
+      width: 60%;
+      text-align: center;
+      justify-content: center;
+    }
+    h2 {
+      color: $defaultColor8;
+    }
+    h3 {
+      color: $defaultColor5;
+    }
+    h4 {
+      color: $defaultColor7;
+    }
+    .grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 5px;
+    }
+
+    img {
+      width: 12vh;
+      border-radius: 10%;
+    }
+  }
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    row-gap: 30px;
+    button {
+      color: white;
+      border-radius: 10%;
+      width: fit-content;
+    }
+
+    [class="btn-default"] {
+      background-color: black;
+    }
+    [class="btn-cool"] {
+      background-color: $defaultColor4;
+    }
+    [class="btn-hot"] {
+      background-color: red;
+    }
+    [class="btn-awesome"] {
+      background-color: $defaultColor8;
+    }
+  }
+  #lists {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    h1 {
+      color: $defaultColor4;
+    }
+    h2 {
+      color: $defaultColor8;
+    }
+    article {
+      ul,
+      ol {
+        padding-left: 10%;
+      }
+    }
+  }
+  #media {
+    width: 100%;
+    @include Dpflex;
+    .container {
+      @include Dpflex;
+    }
+    h1 {
+      color: $defaultColor4;
+    }
+    article {
+      @include Dpflex;
+    }
+    ol {
+      list-style: none;
+    }
+    img {
+      float: left;
+      padding: 2%;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      h2 {
+        color: $defaultColor4;
+        font-weight: 600;
+      }
+    }
+    .item {
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .item:nth-child(1) {
+      border-top: 1px dotted black;
+    }
+    .item:nth-child(2) {
+      border-top: 1px dotted black;
+      border-bottom: 1px dotted black;
+    }
+  }
+}
